@@ -1,6 +1,47 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-between;
+}
+// .nav-mobile {
+//   display: flex;
+// }
 .menu__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.285;
-  color: $white-color;
+  color: var(--white-color);
+}
+
+.menu__buy-now {
+  display: inline-block;
+  border-color: transparent;
+  width: 209px;
+  height: 44px;
+  padding: 16px 44px 13px 44px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.312;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-title-color);
+  background-color: var(--white-color);
+  border-radius: 22px;
+  cursor: pointer;
+}
+.menu__open {
+  display: inline-block;
+  border-color: transparent;
+  background-color: transparent;
+  width: 20px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.header-logo {
+  width: 199px;
+  height: 50px;
+  margin-top: 6px;
 }
