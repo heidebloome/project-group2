@@ -5,9 +5,13 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
+@import './utils/mixins';
+
 @import './base/reset';
 @import './base/body';
+@import './base/icon';
 @import './base/container';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
