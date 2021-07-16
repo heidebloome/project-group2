@@ -1,23 +1,13 @@
 <body>
   <header class="container">
-    <a href="" class="logo">
-      <!-- <svg class="logo__icon" width="" height="">
-        <use href="./icons/sprite.svg#icon"></use>
-      </svg> -->
+    <a href="../index.html" class="logo">
+      <picture>
+             <source srcset="../image/header/logo-1x.png 1x, ../image/header/logo-2x.png 2x"  type="image/png">
+          </picture>
     </a>
     <nav class="nav">
-      <button
-        type="button"
-        class="menu__open js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <!-- <svg class="menu__icons" width="24" height="16">
-          <use href="./icons/sprite.svg#button-header-mob"></use>
-        </svg> -->
-      </button>
-      <div class="mobile-nav js-menu-container" id="mobile-menu">
-        <button type="button" class="menu__close js-close-menu"></button>
+     
+      
 
         <div class="container">
           <button type="button">Buy now ></button>
@@ -59,6 +49,18 @@
             </li>
           </ul>
           <button type="button">Buy now ></button>
+           <button
+        type="button"
+        class="menu__open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu__icons" width="14" height="14">
+          <use href="./icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav js-menu-container" id="mobile-menu">
+        <button type="button" class="menu__close js-close-menu"></button>
         </div>
       
          </nav>
