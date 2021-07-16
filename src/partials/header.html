@@ -1,16 +1,29 @@
-<body>
-  <header class="container">
-    <a href="../index.html" class="logo">
+  <header >
+    <div class="container">
+  <div class="nav-mobile">
+     <nav class="nav">
+    <a href="./index.html" class="logo">
       <picture>
-             <source srcset="../image/header/logo-1x.png 1x, ../image/header/logo-2x.png 2x"  type="image/png">
+             <source srcset="./images/header/logo-1x.png 1x, ./images/header/logo-2x.png 2x"  type="image/png">
+             <img  class="header-logo">
           </picture>
     </a>
-    <nav class="nav">
-     
-      
-
-        <div class="container">
-          <button type="button">Buy now ></button>
+        
+     <button
+        type="button"
+        class="menu__open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu__icons" width="20" height="12">
+          <use href="./images/icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+            <div class="container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu__close js-close-menu"></button>
+          <button type="button" class="menu__buy-now">Buy now ></button>
           <ul class="menu__nav">
             <li class="menu__list">
               <a href="./index.html" class="menu__link current">Home</a>
@@ -56,7 +69,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu__icons" width="14" height="14">
-          <use href="./icons/sprite.svg#icon-burger"></use>
+          <use href="./images/icons/sprite.svg#icon-burger"></use>
         </svg>
       </button>
       <div class="mobile-nav js-menu-container" id="mobile-menu">
