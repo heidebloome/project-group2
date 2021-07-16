@@ -1,0 +1,12 @@
+.cafe-list-title {
+  @include font(12px, 500, 1.833, 0.04em);
+  color: var(--black-color);
+}
+
+.cafe-list-description {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--text-color);
+}
