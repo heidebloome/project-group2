@@ -45,3 +45,22 @@
   height: 50px;
   margin-top: 6px;
 }
+
+.container--mobile {
+  position: fixed;
+  background-color: #e17992;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  transform: translateX(100%);
+  @extend %transition_1;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container--mobile.is-open {
+  transform: translateX(0);
+}
