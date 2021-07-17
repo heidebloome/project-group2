@@ -2,7 +2,7 @@
   background-color: var(--background-secondary-color);
 }
 
-.cafe-list-item {
+.cafe-list__item {
   width: 220px;
   margin-right: auto;
   margin-left: auto;
@@ -17,15 +17,54 @@
   }
 }
 
-.cafe-list-title {
+.cafe-list__pretitle {
+  display: inline-block;
+  padding: 0 25px;
+
+  border-radius: 4px;
+
+  @include font(12px, 500, 1.8333, 0.04em);
+  text-align: center;
+
+  color: var(--white-color);
+  background-color: var(--card-coffee-color);
+
+  &--green {
+    background-color: var(--card-green-color);
+  }
+}
+
+.cafe-list__title {
+  margin-bottom: 10px;
+
   @include font(12px, 500, 1.833, 0.04em);
   color: var(--black-color);
 }
 
-.cafe-list-description {
+.cafe-list__description {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
 
   color: var(--text-color);
+}
+
+.wrapper {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--secondary-comment-color);
+
+  &--no-padding {
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.work-days-list__days {
+  @include font(12px, 500, 1.833, 0.04em);
+  color: var(--black-color);
+}
+
+.work-days-list__time {
+  @include font(12px, 500, 1.833, 0.04em);
+  color: var(--secondary-title-color);
 }
