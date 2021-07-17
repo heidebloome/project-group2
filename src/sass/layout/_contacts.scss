@@ -1,5 +1,11 @@
 .contacts {
-  background-color: var(--background-secondary-color);
+  // background-color: var(--background-secondary-color);
+  background-image: linear-gradient(to bottom, #ffffff 5.5%, #fff5f6 5.5%);
+  padding-bottom: 113px;
+}
+
+.cafe-list {
+  margin-bottom: 54px;
 }
 
 .cafe-list__item {
@@ -67,4 +73,47 @@
 .work-days-list__time {
   @include font(12px, 500, 1.833, 0.04em);
   color: var(--secondary-title-color);
+}
+
+.contacts-list__link {
+  @include font(12px, 500, 1.5, 0.04em);
+  color: var(--text-color);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  border: 0;
+  border-radius: 22px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3125;
+
+  color: var(--white-color);
+  background-color: var(--primary-title-color);
+  cursor: pointer;
+
+  &--inverse {
+    color: var(--primary-title-color);
+    background-color: var(--white-color);
+  }
+
+  & .icon {
+    margin-left: 8px;
+  }
+}
+
+.contacts-buttons-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

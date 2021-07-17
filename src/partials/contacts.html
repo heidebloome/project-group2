@@ -25,10 +25,10 @@
         <div class="wrapper wrapper--no-padding">
           <ul class="contacts-list">
             <li class="contacts-list__item">
-              <a class="contacts-list__link" href="">+61(0) 383 766 284</a>
+              <a class="contacts-list__link" href="tel:+610383766284">+61(0) 383 766 284</a>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__link" href="">noreply@envato.com</a>
+              <a class="contacts-list__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </li>
           </ul>
         </div>
@@ -100,9 +100,21 @@
         </div>
       </li>
     </ul>
-    <ul>
-      <li><button>Our Locations</button></li>
-      <li><button>Franchise</button></li>
+    <ul class="contacts-buttons-list">
+      <li class="contacts-buttons-list__item">
+        <button type="button" class="button">
+          Our Locations<svg class="icon" width="12" height="12">
+            <use href="images/icons/sprite.svg#icon-btn-bracket"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts-buttons-list__item">
+        <button type="button" class="button button--inverse">
+          Franchise<svg class="icon" width="12" height="12">
+            <use href="images/icons/sprite.svg#icon-btn-bracket"></use>
+          </svg>
+        </button>
+      </li>
     </ul>
   </div>
 </section>
