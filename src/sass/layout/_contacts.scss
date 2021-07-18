@@ -6,20 +6,38 @@
 
 .cafe-list {
   margin-bottom: 54px;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .cafe-list__item {
   width: 220px;
   margin-right: auto;
   margin-left: auto;
-  padding: 43px 20px;
+  padding: 45px 20px;
 
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background-color: var(--white-color);
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    @include before-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 40px) / 3);
+    padding: 50px 30px;
+  }
+
+  @include desktop {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 
@@ -71,6 +89,7 @@
   margin-bottom: 10px;
 
   @include font(12px, 500, 1.833, 0.04em);
+
   color: var(--black-color);
 
   @include tablet {
@@ -107,19 +126,70 @@
   }
 }
 
+.work-days-list__item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+  }
+}
+
 .work-days-list__days {
-  @include font(12px, 500, 1.833, 0.04em);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.833;
+
   color: var(--black-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .work-days-list__time {
-  @include font(12px, 500, 1.833, 0.04em);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.833;
+
   color: var(--secondary-title-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .contacts-list__link {
-  @include font(12px, 500, 1.5, 0.04em);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
   color: var(--text-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.8125;
+  }
 }
 
 .button {
