@@ -1,10 +1,11 @@
 .nav {
   width: 100%;
   display: flex;
-  align-items: center;
+
   margin-left: auto;
   justify-content: space-between;
   align-items: baseline;
+  //   position: relative;
 }
 
 .menu__link {
@@ -37,7 +38,7 @@
 
 .logo {
   margin: auto;
-  margin-left: 20px;
+
   @include tablet {
     margin-left: 34px;
   }
@@ -69,8 +70,6 @@
   background-color: #e17992;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: 2;
   transform: translateX(100%);
   @extend %transition_1;
@@ -92,12 +91,20 @@
   display: inline-block;
   border-color: transparent;
   background-color: transparent;
-  width: 20px;
-  height: 12px;
+  //   width: 20px;
+  //   height: 12px;
   cursor: pointer;
-  margin: auto;
+
   justify-content: flex-end;
   vertical-align: top;
+  margin-top: 25px;
+  border-width: 0;
+  padding: 0;
+
+  @include tablet {
+    margin-top: 52px;
+  }
+
   @include desktop {
     display: none;
   }
@@ -108,7 +115,8 @@
   height: 14px;
   border-color: transparent;
   margin: 23px 34px 23px;
-  margin-left: auto;
+  position: absolute;
+  right: 34px;
 }
 
 .button__buy-now {
@@ -123,6 +131,7 @@
   background-color: var(--white-color);
   border-radius: 22px;
   cursor: pointer;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 19px;
@@ -138,6 +147,8 @@
 }
 
 .button__buy-now--tablet {
+  width: 160px;
+  margin-left: 30px;
   margin-top: 38px;
   @include before-tablet {
     display: none;
@@ -156,13 +167,17 @@
 // destop-tablet nav
 .nav__main {
   flex-grow: 1;
+  z-index: 1;
+  @include desktop {
+    margin-left: 115px;
+  }
 }
 
 .nav__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-basis: calc((100% - 140px) / 5);
+  //   flex-basis: calc((100% - 140px) / 5);
   @include before-desktop {
     display: none;
   }
@@ -186,4 +201,8 @@
   padding-bottom: 50px;
   cursor: pointer;
   //   color: var(--white-color);
+}
+.nav__link-header:hover,
+.nav__link-header:focus {
+  color: var(--point-color);
 }

@@ -11,21 +11,10 @@
         </picture>
       </a>
 
-      <button
-        type="button"
-        class="button__open js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="menu__icons" width="20" height="12">
-          <use href="./images/icons/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
-
       <div class="container--mobile js-menu-container" id="mobile-menu">
         <button type="button" class="button__close js-close-menu">
           <svg width="14" height="14">
-            <use href="./images/icons/close.svg"></use>
+            <use href="./images/icons/close.svg" class="icon"></use>
           </svg>
         </button>
         <button type="button" class="button__buy-now">
@@ -39,16 +28,16 @@
             <a href="./index.html" class="menu__link current">Home</a>
           </li>
           <li class="menu__list">
-            <a href="" class="menu__link">About us</a>
+            <a href="#about-us" class="menu__link">About us</a>
           </li>
           <li class="menu__list">
-            <a href="" class="menu__link">How it’s made?</a>
+            <a href="#how-its-made" class="menu__link">How it’s made?</a>
           </li>
           <li class="menu__list">
-            <a href="" class="menu__link">Our products</a>
+            <a href="#our-products" class="menu__link">Our products</a>
           </li>
           <li class="menu__list">
-            <a href="" class="menu__link">Contact</a>
+            <a href="#contacts" class="menu__link">Contact</a>
           </li>
         </ul>
       </div>
@@ -72,6 +61,16 @@
           </li>
         </ul>
       </div>
+      <button
+        type="button"
+        class="button__open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu__icons">
+          <use href="./images/icons/sprite.svg#icon-burger-2"></use>
+        </svg>
+      </button>
       <button type="button" class="button__buy-now button__buy-now--tablet">
         Buy now &nbsp; &nbsp; &nbsp;
         <svg width="10" height="15">

@@ -131,7 +131,7 @@ body {
 
 @media (min-width: 1280px) {
   .container--header {
-    width: 1280px;
+    width: 1200px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -142,9 +142,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -191,7 +188,6 @@ body {
 
 .logo {
   margin: auto;
-  margin-left: 20px;
 }
 
 @media (min-width: 768px) {
@@ -229,8 +225,6 @@ body {
   background-color: #e17992;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: 2;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -260,14 +254,20 @@ body {
   display: inline-block;
   border-color: transparent;
   background-color: transparent;
-  width: 20px;
-  height: 12px;
   cursor: pointer;
-  margin: auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   vertical-align: top;
+  margin-top: 25px;
+  border-width: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .button__open {
+    margin-top: 52px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -281,7 +281,8 @@ body {
   height: 14px;
   border-color: transparent;
   margin: 23px 34px 23px;
-  margin-left: auto;
+  position: absolute;
+  right: 34px;
 }
 
 .button__buy-now {
@@ -296,6 +297,7 @@ body {
   background-color: var(--white-color);
   border-radius: 22px;
   cursor: pointer;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 19px;
@@ -308,6 +310,8 @@ body {
 }
 
 .button__buy-now--tablet {
+  width: 160px;
+  margin-left: 30px;
   margin-top: 38px;
 }
 
@@ -339,6 +343,13 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  .nav__main {
+    margin-left: 115px;
+  }
 }
 
 .nav__list {
@@ -352,8 +363,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: calc((100% - 140px) / 5);
-      flex-basis: calc((100% - 140px) / 5);
 }
 
 @media (max-width: 1279px) {
@@ -388,6 +397,11 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   cursor: pointer;
+}
+
+.nav__link-header:hover,
+.nav__link-header:focus {
+  color: var(--point-color);
 }
 
 hero {
