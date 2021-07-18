@@ -38,6 +38,33 @@
   &--green {
     background-color: var(--card-green-color);
   }
+
+  @include tablet {
+    padding: 0 16px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.wrapper {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--secondary-comment-color);
+
+  @include tablet {
+    padding: 30px 0;
+  }
+
+  @include desktop {
+    padding: 32px 0;
+  }
+
+  &--no-padding {
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .cafe-list__title {
@@ -45,6 +72,20 @@
 
   @include font(12px, 500, 1.833, 0.04em);
   color: var(--black-color);
+
+  @include tablet {
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 1.875;
+  }
 }
 
 .cafe-list__description {
@@ -53,15 +94,16 @@
   line-height: 1.5;
 
   color: var(--text-color);
-}
 
-.wrapper {
-  padding: 25px 0;
-  border-bottom: 1px solid var(--secondary-comment-color);
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.643;
+  }
 
-  &--no-padding {
-    padding-bottom: 0;
-    border: none;
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.8125;
+    letter-spacing: 0.04em;
   }
 }
 
