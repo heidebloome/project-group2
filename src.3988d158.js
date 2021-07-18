@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../fonts/TitanOne.woff":[["TitanOne.dc832f6f.woff","zgm2"],"zgm2"],"./../fonts/TitanOne.woff2":[["TitanOne.58235077.woff2","WZsn"],"WZsn"],"./../fonts/DMSans-Regular.woff":[["DMSans-Regular.b2eeae7c.woff","yp0c"],"yp0c"],"./../fonts/DMSans-Regular.woff2":[["DMSans-Regular.ef98848c.woff2","NJrL"],"NJrL"],"./../fonts/DMSans-Medium.woff":[["DMSans-Medium.0bf77a27.woff","cH07"],"cH07"],"./../fonts/DMSans-Medium.woff2":[["DMSans-Medium.aaf26df0.woff2","Vd80"],"Vd80"],"./../fonts/DMSans-Bold.woff":[["DMSans-Bold.7e225416.woff","xe55"],"xe55"],"./../fonts/DMSans-Bold.woff2":[["DMSans-Bold.74327ca6.woff2","rUU3"],"rUU3"],"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group2/src.113fbab1.js.map
+//# sourceMappingURL=/project-group2/src.3988d158.js.map
