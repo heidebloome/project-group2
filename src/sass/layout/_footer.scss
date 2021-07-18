@@ -93,6 +93,9 @@ footer {
 .footer__list--link {
   width: 100%;
   height: 100%;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--secondary-title-color);
   &:hover {
     color: var(--primary-title-color);
