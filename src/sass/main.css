@@ -131,6 +131,31 @@ body {
 
 .container--header {
   width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 480px) {
+  .container--header {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container--header {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container--header {
+    width: 1280px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .nav {
@@ -206,6 +231,11 @@ body {
   width: 199px;
   height: 50px;
   margin-top: 6px;
+}
+
+.menu__icons {
+  width: 20px;
+  height: 12px;
 }
 
 .icon--header {
@@ -343,8 +373,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: calc((100% - 140px)/5);
-      flex-basis: calc((100% - 140px)/5);
+  -ms-flex-preferred-size: calc((100% - 140px) / 5);
+      flex-basis: calc((100% - 140px) / 5);
 }
 
 @media (max-width: 1279px) {
@@ -379,6 +409,7 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   cursor: pointer;
+  color: var(--white-color);
 }
 
 hero {
