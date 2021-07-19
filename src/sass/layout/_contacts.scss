@@ -31,7 +31,7 @@
 }
 
 .cafe-list__item {
-  width: 100%;
+  width: 220px;
   margin-right: auto;
   margin-left: auto;
   padding: 45px 20px;
@@ -233,8 +233,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+
   width: 165px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -251,12 +250,39 @@
   background-color: var(--primary-title-color);
   cursor: pointer;
 
-  &--inverse {
-    color: var(--primary-title-color);
-    background-color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
   }
 
-  & .icon {
-    margin-left: 8px;
+  @include before-tablet {
+    margin-left: auto;
+    margin-right: auto;
+
+    & .icon {
+      margin-left: 8px;
+    }
+  }
+
+  @include tablet {
+    width: 190px;
+
+    & .icon {
+      margin-left: 13px;
+    }
+  }
+
+  @include desktop {
+    width: 200px;
+  }
+}
+
+.button--inverse {
+  color: var(--primary-title-color);
+  background-color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
