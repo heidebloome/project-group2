@@ -1,7 +1,20 @@
 .contacts {
-  // background-color: var(--background-secondary-color);
   background-image: linear-gradient(to bottom, #ffffff 5.5%, #fff5f6 5.5%);
   padding-bottom: 113px;
+
+  @include tablet {
+    padding-bottom: 158px;
+    background-image: linear-gradient(to bottom, #ffffff 9%, #fff5f6 9%);
+  }
+
+  @include desktop {
+    padding-bottom: 86px;
+    background-image: url(../images/contacts/sectionbg2-1x.png),
+      linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 25%;
+  }
 }
 
 .cafe-list {
@@ -9,11 +22,16 @@
 
   @include tablet {
     display: flex;
+    margin-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 85px;
   }
 }
 
 .cafe-list__item {
-  width: 220px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 45px 20px;
@@ -34,6 +52,7 @@
   }
 
   @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
     padding-top: 50px;
     padding-bottom: 60px;
     padding-right: 45px;
@@ -122,7 +141,7 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.8125;
-    letter-spacing: 0.04em;
+    // letter-spacing: 0.04em;
   }
 }
 
@@ -192,6 +211,24 @@
   }
 }
 
+.contacts-buttons-list {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts-buttons-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -221,11 +258,5 @@
 
   & .icon {
     margin-left: 8px;
-  }
-}
-
-.contacts-buttons-list__item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
   }
 }
