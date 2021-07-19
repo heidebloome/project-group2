@@ -289,16 +289,13 @@
 
        &::after{
     position: absolute;
+    width: 26px;
+    height: 6px;
     content: '';
     background-image:url(../images/icons/three-dots.svg);
-    color:var(--primary-title-color);
+    color:var(--white-color);
     background-position: center;
-    background-repeat: repeat;
-    // width: 6px;
-    // height: 6px;
-    border-radius: 50%;
-    background-color:var(--white-color);
-
+    background-repeat: no-repeat;
     top: 45%;
     left: 50%;
     transform: translateX(-50%);
