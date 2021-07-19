@@ -1,7 +1,7 @@
-footer {
+.footer {
   background-color: var(--background-secondary-color);
 }
-.container {
+.container-footer {
   @include tablet {
     display: flex;
     justify-content: space-between;
