@@ -1,5 +1,5 @@
 <section class="hero">
-
+    <!-- Header -->
     <header>
         <div class=" container--header">
             <nav class="nav">
@@ -13,28 +13,33 @@
                 <div class="container--mobile js-menu-container" id="mobile-menu">
                     <button type="button" class="button__close js-close-menu">
                         <svg width="14" height="14">
-                            <use href="" class="icon"></use>
+                            <use href="./images/icons/close.svg" class="icon"></use>
                         </svg>
                     </button>
+
                     <button type="button" class="button__buy-now">
                         Buy now &nbsp; &nbsp; &nbsp;
                         <svg width="10" height="15">
-                            <use href="" class="icon icon--header"></use>
+                            <use href="./images/icons/sprite.svg#icon-btn-bracket" class="icon icon--header"></use>
                         </svg>
                     </button>
                     <ul class="menu__nav">
                         <li class="menu__list">
                             <a href="./index.html" class="menu__link current">Home</a>
                         </li>
+
                         <li class="menu__list">
                             <a href="#about-us" class="menu__link">About us</a>
                         </li>
+
                         <li class="menu__list">
                             <a href="#how-its-made" class="menu__link">How it’s made?</a>
                         </li>
+
                         <li class="menu__list">
                             <a href="#our-products" class="menu__link">Our products</a>
                         </li>
+
                         <li class="menu__list">
                             <a href="#contacts" class="menu__link">Contact</a>
                         </li>
@@ -60,29 +65,31 @@
                         </li>
                     </ul>
                 </div>
+
                 <button type="button" class="button__open js-open-menu" aria-expanded="false"
                     aria-controls="mobile-menu">
                     <svg class="menu__icons">
-                        <use href=""></use>
+                        <use href="./images/icons/sprite.svg#icon-burger-2"></use>
                     </svg>
                 </button>
+
                 <button type="button" class="button__buy-now button__buy-now--tablet">
                     Buy now &nbsp; &nbsp; &nbsp;
                     <svg width="10" height="15">
-                        <use href="" class="icon icon--header"></use>
+                        <use href="./images/icons/sprite.svg#icon-btn-bracket" class="icon icon--header"></use>
                     </svg>
                 </button>
             </nav>
         </div>
     </header>
 
-
+    <!-- Hero -->
     <div class="container container-hero">
         <picture>
-            <sourse srcset="" type="img/png">
-                <img class="hero-ice" src="" alt="Морозиво" />
-                <sourse srcset="" type="img/png">
-                    <img class="hero-ellipce" src="" alt="Еліпс" />
+            <sourse srcset="/images/icecream_hero.png 1x, /images/icecream_hero@2x.png 2x" type="img/png">
+                <img class="hero-ice" src="/images/icecream_hero.png" alt="Морозиво" />
+                <sourse srcset="/images/sosna/ellipse.png 1x, /images/ellipse2x.png 2x" type="img/png">
+                    <img class="hero-ellipce" src="/images/ellipse.png" alt="Еліпс" />
         </picture>
 
         <h1 class="hero-title"> ice cream made with </h1>
@@ -109,16 +116,16 @@
                 </li>
             </ul>
             <picture>
-                <sourse srcset="" type="img/png">
-                    <img class="hero-girl" src="" alt="Дівчина" />
+                <sourse srcset="/images/girl.png 1x, /images/girl@2x.png 2x" type="img/png">
+                    <img class="hero-girl" src="/images/girl.png" alt="Дівчина" />
             </picture>
         </div>
 
         <div class="bioeco">
             <picture>
-                <sourse srcset="" type="img/png">
-                    <sourse srcset="" type="img/webp">
-                        <img class="bioeco-img" src="" alt="Молоко" />
+                <sourse srcset="/images/milk.png 1x, /images/milk@2x.png 2x" type="img/png">
+                    <sourse srcset="/images/milk.webp 1x, /images/milk@2x.webp 2x" type="img/webp">
+                        <img class="bioeco-img" src="/images/milk.png" alt="Молоко" />
             </picture>
 
             <p class="hero-text">Lorem ipsum dolor sit amet,
@@ -128,8 +135,8 @@
 
             <a href class="hero-arrow">
 
-                <svg class="hero-icon" width="10" height="10" aria-label="Стрелка вправо">
-                    <use href=""></use>
+                <svg class="hero-icon" width="10" height="10" aria-label="Стрілка вправо">
+                    <use href="/images/icon/IceCreamIcons.svg#icon-arrow-right"></use>
                 </svg>
             </a>
         </div>
