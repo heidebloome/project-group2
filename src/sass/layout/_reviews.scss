@@ -1,4 +1,4 @@
-.reviews-img {
+.reviews__img {
   margin-top: 80px;
   margin-bottom: 29px;
   margin-left: auto;
@@ -8,7 +8,8 @@
   height: 85px;
 }
 
-.reviews-block {
+.reviews-description {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +23,11 @@
   background-color: var(--background-comment-color);
 }
 
-.reviews-block::before {
+.reviews-description::before {
   position: absolute;
 
-  top: 28;
-  left: 61;
+  top: 28px;
+  left: 61px;
 
   content: '';
 
@@ -38,7 +39,7 @@
   background-size: 54px 40px;
 }
 
-.reviews-block__item {
+.reviews-description__item {
   position: relative;
 
   width: 157px;
@@ -51,7 +52,40 @@
 
   color: var(--black-color);
 
-  border: 10px;
-
-  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center bottom 1px;
+  background-size: 100% 1px;
+  background-image: linear-gradient(to right, red, blue);
 }
+
+.reviews-title {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 52px;
+  margin-bottom: 128px;
+}
+
+.reviews-title__item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+
+  text-align: center;
+}
+
+.reviews-title__item::before {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  width: 32px;
+  height: 4px;
+
+  background-image: url('../images/icons/red-ellipsis.svg');
+}
+
+// .reviews-title__icon {
+//   width: 12px;
+//   height: 12px;
+// }
