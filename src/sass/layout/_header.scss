@@ -1,25 +1,23 @@
 .nav {
   width: 100%;
   display: flex;
-
   margin-left: auto;
   justify-content: space-between;
   align-items: baseline;
-  //   position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 37px;
+  }
 }
-
 .menu__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.285;
   color: var(--white-color);
 }
-
 .menu__link:focus,
 .menu__link:hover {
   color: var(--primary-title-color);
 }
-
 .menu__list {
   display: flex;
   flex-direction: row;
@@ -31,61 +29,57 @@
   font-size: 14px;
   line-height: 1.285;
 }
-
 .current {
   color: var(--primary-title-color);
 }
-
 .logo {
   margin: auto;
-
+  padding-top: 6px;
+  display: inline-block;
   @include tablet {
     margin-left: 34px;
   }
-  @include desktop {
-    margin-left: 46px;
-  }
+  // @include desktop {
+  //   margin-left: 46px;
+  // }
 }
-
 .header-logo {
   width: 199px;
   height: 50px;
-  margin-top: 6px;
 }
-
 .menu__icons {
   width: 20px;
   height: 12px;
 }
-
 .icon--header {
   border: 2px solid #d41443;
   width: 8px;
   height: 18px;
   vertical-align: top;
 }
-
 .container--mobile {
   position: fixed;
   background-color: #e17992;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 999;
   transform: translateX(100%);
   @extend %transition_1;
   flex-direction: column;
   display: flex;
   width: 100vw;
   height: 100vh;
+  // @include before-desktop {
+  //   width: 254px;
+  //   height: 1020px;
+  // }
   @include desktop {
     display: none;
   }
 }
-
 .container--mobile.is-open {
   transform: translateX(0);
 }
-
 // button
 .button__open {
   display: inline-block;
@@ -94,36 +88,36 @@
   //   width: 20px;
   //   height: 12px;
   cursor: pointer;
-
   justify-content: flex-end;
   vertical-align: top;
   margin-top: 25px;
   border-width: 0;
   padding: 0;
-
-  @include tablet {
-    margin-top: 52px;
-  }
-
   @include desktop {
     display: none;
   }
 }
-
 .button__close {
   width: 14px;
   height: 14px;
+  cursor: pointer;
   border-color: transparent;
-  margin: 23px 34px 23px;
+  display: block;
   position: absolute;
-  right: 34px;
+  top: 23px;
+  right: 28px;
+  // content: '';
+  // background-repeat: no-repeat;
+  // color: currentColor;
+  // background-image: url(/images/icons/x.svg);
+  // background-color: transparent;
 }
-
 .button__buy-now {
   display: inline-block;
   border-color: transparent;
-  width: 209px;
+  width: 160px;
   height: 44px;
+  margin-left: 30px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.312;
@@ -131,48 +125,39 @@
   background-color: var(--white-color);
   border-radius: 22px;
   cursor: pointer;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 19px;
-  // &:hover {
-  //   background-color: #e17992;
-  // }
-}
-
-.button__buy-now:hover,
-.button__buy-now:focus {
-  background-color: var(--primary-title-color);
-  color: var(--white-color);
-}
-
-.button__buy-now--tablet {
-  width: 160px;
-  margin-left: 30px;
-  margin-top: 38px;
   @include before-tablet {
     display: none;
   }
-  @include tablet {
-    margin-right: 34px;
-  }
-  @include before-desktop {
-    margin-right: 34px;
-  }
-  @include desktop {
-    margin-right: 115px;
-  }
 }
-
+.button__buy-now:hover,
+.button__buy-now:focus {
+  background-color: #ecebeb;
+  color: var(--primary-title-color);
+}
+.button__buy-now--tablet {
+  display: inline-block;
+  border-color: transparent;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 209px;
+  height: 44px;
+  margin-top: 60px;
+}
+.button__buy-now--tablet:hover,
+.button__buy-now--tablet:focus {
+  background-color: #ecebeb;
+  color: var(--primary-title-color);
+}
 // destop-tablet nav
 .nav__main {
   flex-grow: 1;
   z-index: 1;
   @include desktop {
-    margin-left: 115px;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
-
 .nav__list {
   display: flex;
   flex-direction: row;
@@ -182,7 +167,6 @@
     display: none;
   }
 }
-
 .nav__part {
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +175,6 @@
   justify-content: space-between;
   padding-left: 0;
 }
-
 .nav__link-header {
   font-weight: 700;
   font-size: 16px;
