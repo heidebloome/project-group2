@@ -36,7 +36,9 @@
 
 .hero-title {
   width: 218px;
-
+  //height: 106px;
+  //padding-top: 193px;
+  //margin: 0px;
   margin-top: 137px;
   margin-bottom: 19px;
 
@@ -89,10 +91,8 @@
 
 .hero-ellipce {
   width: 346px;
-
   margin-left: 36px;
   margin-top: 27px;
-
   margin-bottom: 75px;
   position: absolute;
 
@@ -223,15 +223,14 @@
 
 .hero-ice {
   @media screen and (max-width: 767px) {
+    position: absolute;
     width: 171px;
-
+    height: 410px;
     margin-left: 117px;
     margin-top: 92px;
-    margin-right: 94px;
+    margin-right: 32px;
     z-index: 2;
-    position: absolute;
   }
-
   @include tablet {
     position: absolute;
     width: 143px;
