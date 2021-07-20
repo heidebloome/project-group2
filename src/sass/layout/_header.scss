@@ -61,7 +61,7 @@
   position: fixed;
   background-color: #e17992;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 999;
   transform: translateX(100%);
   @extend %transition_1;
@@ -69,10 +69,10 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  // @include before-desktop {
-  //   width: 254px;
-  //   height: 1020px;
-  // }
+  @include before-desktop {
+    width: 254px;
+    height: 1020px;
+  }
   @include desktop {
     display: none;
   }
@@ -106,11 +106,9 @@
   position: absolute;
   top: 23px;
   right: 28px;
-  // content: '';
-  // background-repeat: no-repeat;
-  // color: currentColor;
-  // background-image: url(/images/icons/x.svg);
-  // background-color: transparent;
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
 }
 .button__buy-now {
   display: inline-block;
@@ -137,12 +135,13 @@
 .button__buy-now--tablet {
   display: inline-block;
   border-color: transparent;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   width: 209px;
   height: 44px;
   margin-top: 60px;
+  margin-bottom: 19px;
+  // position: relative;
+  // left: 50%;
+  // transform: translate(50%, 50%);
 }
 .button__buy-now--tablet:hover,
 .button__buy-now--tablet:focus {
