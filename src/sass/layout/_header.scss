@@ -13,6 +13,7 @@
   font-size: 14px;
   line-height: 1.285;
   color: var(--white-color);
+  @extend %transition_1;
 }
 .menu__link:focus,
 .menu__link:hover {
@@ -93,6 +94,7 @@
   margin-top: 25px;
   border-width: 0;
   padding: 0;
+  @extend %transition_1;
   @include desktop {
     display: none;
   }
@@ -109,6 +111,7 @@
   background-color: transparent;
   border-width: 0;
   padding: 0;
+  @extend %transition_1;
 }
 .button__buy-now {
   display: inline-block;
@@ -123,6 +126,7 @@
   background-color: var(--white-color);
   border-radius: 22px;
   cursor: pointer;
+  @extend %transition_1;
   @include before-tablet {
     display: none;
   }
@@ -139,6 +143,7 @@
   height: 44px;
   margin-top: 60px;
   margin-bottom: 19px;
+  @extend %transition_1;
   // position: relative;
   // left: 50%;
   // transform: translate(50%, 50%);
@@ -183,6 +188,7 @@
   padding-bottom: 50px;
   cursor: pointer;
   color: var(--white-color);
+  @extend %transition_1;
 }
 .nav__link-header:hover,
 .nav__link-header:focus {

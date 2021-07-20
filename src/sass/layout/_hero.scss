@@ -17,6 +17,7 @@
 }
 
 .hero {
+  width: 100%;
   background: var(--background-hero-color);
   // height: 502px;
   // margin-left: auto;
@@ -39,7 +40,7 @@
   //height: 106px;
   //padding-top: 193px;
   //margin: 0px;
-  margin-top: 137px;
+  // margin-top: 137px;
   margin-bottom: 19px;
 
   font-family: Titan One;
@@ -91,31 +92,31 @@
 
 .hero-ellipce {
   width: 346px;
-  margin-left: 36px;
-  margin-top: 27px;
-  margin-bottom: 75px;
   position: absolute;
+  top: 30%;
+  left: 63%;
+  transform: translate(-50%, -50%);
 
   @include tablet {
     width: 324px;
 
-    margin-top: 31px;
-    margin-bottom: 46px;
+    // margin-top: 31px;
+    // margin-bottom: 46px;
 
-    margin-left: 280px;
-    margin-right: 137px;
-    position: absolute;
+    // margin-left: 280px;
+    // margin-right: 137px;
+    // position: absolute;
   }
 
   @include desktop {
     width: 538px;
-    //height: 538px;
+    // //height: 538px;
 
-    margin-left: 475px;
-    margin-right: 267px;
+    // margin-left: 475px;
+    // margin-right: 267px;
 
-    margin-top: 53px;
-    margin-bottom: 75px;
+    // margin-top: 53px;
+    // margin-bottom: 75px;
   }
 }
 
@@ -222,14 +223,25 @@
 }
 
 .hero-ice {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+
+  top: 23%;
+  left: 20%;
+  transform: translate(-50%, -50%);
   @media screen and (max-width: 767px) {
     position: absolute;
     width: 171px;
     height: 410px;
-    margin-left: 117px;
-    margin-top: 92px;
-    margin-right: 32px;
-    z-index: 2;
+
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    // margin-left: 117px;
+    // margin-top: 92px;
+    // margin-right: 32px;
+    z-index: 1;
   }
   @include tablet {
     position: absolute;
