@@ -7,6 +7,10 @@
 .advantages__list {
   width: 100%;
 
+  @include before-tablet {
+    text-align: center;
+  }
+
   @include tablet {
     display: flex;
     align-items: center;
@@ -27,6 +31,11 @@
 
 .first-icon {
   &::before {
+    @include before-tablet {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     display: block;
     width: 33px;
     height: 50px;
@@ -39,6 +48,11 @@
 }
 .second-icon {
   &::before {
+    @include before-tablet {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     display: block;
     width: 50px;
     height: 50px;
@@ -51,10 +65,15 @@
 }
 .third-icon {
   &::before {
+    @include before-tablet {
+      margin-right: auto;
+      margin-left: auto;
+    }
     display: block;
     width: 43px;
     height: 50px;
     margin-bottom: 16px;
+
     content: '';
     background-image: url(../images/advantages/icon3-1x.png);
     background-size: cover;
