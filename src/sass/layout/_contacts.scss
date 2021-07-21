@@ -1,16 +1,19 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #ffffff 5.5%, #fff5f6 5.5%);
+  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%);
+  padding-top: 85px;
   padding-bottom: 113px;
 
   @include tablet {
+    padding-top: 120px;
     padding-bottom: 158px;
-    background-image: linear-gradient(to bottom, #ffffff 9%, #fff5f6 9%);
+    background-image: linear-gradient(to bottom, #ffffff 21%, #fff5f6 21%);
   }
 
   @include desktop {
+    padding-top: 130px;
     padding-bottom: 86px;
     background-image: url(../images/contacts/sectionbg2-1x.png),
-      linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%);
+      linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 25%;
@@ -19,6 +22,10 @@
 
 .cafe-list {
   margin-bottom: 54px;
+
+  @include before-tablet {
+    text-align: center;
+  }
 
   @include tablet {
     display: flex;
