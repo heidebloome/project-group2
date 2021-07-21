@@ -94,15 +94,18 @@
   width: 346px;
   position: absolute;
   top: 30%;
-  //left: 63%;
-  transform: translate(-50%, -50%);
+  left: 63%;
+  //transform: translate(-50%, -50%);
 
   @include tablet {
     width: 324px;
     left: 60%;
+    top: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    //left: 63%;
     // margin-top: 31px;
     // margin-bottom: 46px;
-
     // margin-left: 280px;
     // margin-right: 137px;
     // position: absolute;
@@ -111,11 +114,13 @@
   @include desktop {
     width: 538px;
     top: 183px;
+    top: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     // //height: 538px;
-
+    //left: 63%;
     // margin-left: 475px;
     // margin-right: 267px;
-
     // margin-top: 53px;
     // margin-bottom: 75px;
   }
@@ -524,4 +529,5 @@
     margin-top: -50px;
   }
 }
+// section
 // section
