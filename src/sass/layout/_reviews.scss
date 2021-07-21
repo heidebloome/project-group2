@@ -75,6 +75,11 @@
     top: 30px;
     left: 40px;
   }
+
+  @include desktop {
+    top: 35px;
+    left: 25px;
+  }
 }
 
 .reviews-box__description-item {
@@ -231,14 +236,6 @@
   content: '';
   display: flex;
   justify-content: space-between;
-
-  @include tablet {
-    bottom: -40px;
-  }
-
-  @include desktop {
-    bottom: -35px;
-  }
 }
 
 .icon-reviews {
