@@ -9,4 +9,4 @@ $(document).ready(function(){$("a[href*=#]").on("click",function(e){var r=$(this
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./mobile-menu.js"),require("./smooth-scroll.js"),require("./close-and-scroll.js");
 },{"./sass/main.scss":"clu1","./mobile-menu.js":"Cz5k","./smooth-scroll.js":"GmWq","./close-and-scroll.js":"JMBy"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group2/src.79c8aac6.js.map
+//# sourceMappingURL=/project-group2/src.0efc906b.js.map
