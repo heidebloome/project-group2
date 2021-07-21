@@ -31,9 +31,40 @@
   font-size: 14px;
   line-height: 1.285;
 }
-.current {
+.nav__list.current {
   color: var(--primary-title-color);
+  position: relative;
+  z-index: 33;
 }
+
+.current {
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: pink;
+    transition: width 0.3s ease-in-out;
+    margin-top: 28px;
+    border-radius: 2px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.current {
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1.5);
+    }
+  }
+}
+
 .logo {
   margin: auto;
   padding-top: 6px;
@@ -66,7 +97,7 @@
   top: 0;
   right: 0;
   z-index: 999;
-  transform: translateX(100%);
+  transform: perspective(400px) rotateY(60deg) translateX(300%);
   @extend %transition_1;
   flex-direction: column;
   display: flex;
