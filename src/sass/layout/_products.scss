@@ -1,7 +1,18 @@
 
+
 .products{
     padding-top: 121px;
+    padding-bottom: 98px;
+
+    @include tablet {
+    padding-bottom: 112px;
+  }
+   @include desktop {
+    padding-bottom: 119px;
+
+   }
 }
+
 
 .products__subtitle{
   @include font(18px, 400, 1.166, 0.03em);
@@ -37,19 +48,16 @@
 
 }
 .products__card-set{
-  margin-bottom: 98px;
   width: 100%;
 
 
    @include tablet {
      display: flex;
      flex-wrap: nowrap;
-     margin-bottom: 112px;
      margin-left: -20px;
    }
 
     @include desktop {
-    margin-bottom: 119px;
     margin-left: -24px;
 
     } 
@@ -341,4 +349,14 @@
   transform: translate(-50%, -50%);
   left: 50%;
   top: 85%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+      color: var(--white-color);
+      background-color: #ecebeb;
+
+    }
 }
