@@ -1,0 +1,292 @@
+.contacts {
+  background-image: linear-gradient(to bottom, #ffffff 5.5%, #fff5f6 5.5%);
+  padding-bottom: 113px;
+
+  @include tablet {
+    padding-bottom: 158px;
+    background-image: linear-gradient(to bottom, #ffffff 9%, #fff5f6 9%);
+  }
+
+  @include desktop {
+    padding-bottom: 86px;
+    background-image: url(../images/contacts/sectionbg2-1x.png),
+      linear-gradient(to bottom, #ffffff 13%, #fff5f6 13%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 25%;
+  }
+}
+
+.cafe-list {
+  margin-bottom: 54px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 85px;
+  }
+}
+
+.cafe-list__item {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 45px 20px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: var(--white-color);
+
+  &:not(:last-child) {
+    @include before-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 40px) / 3);
+    padding: 50px 30px;
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+.cafe-list__pretitle {
+  display: inline-block;
+  padding: 0 25px;
+
+  border-radius: 4px;
+
+  @include font(12px, 500, 1.8333, 0.04em);
+  text-align: center;
+
+  color: var(--white-color);
+  background-color: var(--card-coffee-color);
+
+  &--green {
+    background-color: var(--card-green-color);
+  }
+
+  @include tablet {
+    padding: 0 16px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.wrapper {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--secondary-comment-color);
+
+  @include tablet {
+    padding: 30px 0;
+  }
+
+  @include desktop {
+    padding: 32px 0;
+  }
+
+  &--no-padding {
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.cafe-list__title {
+  margin-bottom: 10px;
+
+  @include font(12px, 500, 1.833, 0.04em);
+
+  color: var(--black-color);
+
+  @include tablet {
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.cafe-list__description {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--text-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.643;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.8125;
+    // letter-spacing: 0.04em;
+  }
+}
+
+.work-days-list__item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 15px;
+  }
+}
+
+.work-days-list__days {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.833;
+
+  color: var(--black-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.work-days-list__time {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.833;
+
+  color: var(--secondary-title-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.contacts-list__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--text-color);
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.857;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.8125;
+  }
+}
+
+.contacts-buttons-list {
+  text-align: center;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts-buttons-list__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+.button {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  width: 165px;
+  // height: 44px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  border: 0;
+  border-radius: 22px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3125;
+
+  color: var(--white-color);
+  background-color: var(--primary-title-color);
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @include before-tablet {
+    margin-left: auto;
+    margin-right: auto;
+
+    & .icon {
+      margin-left: 8px;
+    }
+  }
+
+  @include tablet {
+    width: 190px;
+
+    & .icon {
+      margin-left: 13px;
+    }
+  }
+
+  @include desktop {
+    width: 200px;
+  }
+}
+
+.button--inverse {
+  color: var(--primary-title-color);
+  background-color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}

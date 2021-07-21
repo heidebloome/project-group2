@@ -1,0 +1,30 @@
+<section class="gallery_section">
+  <div class="container container-gallery">
+    <h2 class="gallery_tittle visually-hidden">Галерея</h2>
+    <picture>
+      <source
+        srcset="
+          ../src/images/gallery/gallery-desktop-1x.png 1x,
+          ../src/images/gallery/gallery-desktop-2x.png 2x
+        "
+        @include
+        desktop
+      />
+      <source
+        srcset="
+          ../src/images/gallery/gallery-tablet-1x.png 1x,
+          ../src/images/gallery/gallery-tablet-2x.png 2x
+        "
+        @include
+        tablet
+      />
+      <source
+        srcset="
+          ../src/images/gallery/gallery-mob-1x.png 1x,
+          ../src/images/gallery/gallery-mob-2x.png 2x
+        "
+      />
+      <img src="../src/images/gallery/gallery-mob-1x.png" alt="" />
+    </picture>
+  </div>
+</section>
