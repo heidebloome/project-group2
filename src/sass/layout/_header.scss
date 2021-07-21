@@ -38,7 +38,8 @@
   padding-top: 6px;
   display: inline-block;
   @include tablet {
-    margin-left: 34px;
+    //margin-left: 34px;
+    padding-bottom: 15px;
   }
   // @include desktop {
   //   margin-left: 46px;
