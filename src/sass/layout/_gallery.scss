@@ -1,0 +1,35 @@
+.gallery_section {
+
+  padding-bottom: 80px;
+  @include mobile {
+    background-image: linear-gradient(
+      to top,
+      var(--white-color) 73%,
+      var(--background-secondary-color) 9% );
+
+  }
+  @include tablet {
+    background-image: linear-gradient(
+      to top,
+      var(--white-color) 73%,
+      var(--background-secondary-color) 9%
+    );
+    padding-bottom: 121px;
+
+  }
+  @include desktop {
+    background-image: linear-gradient(
+      to top,
+      var(--white-color) 69.5%,
+      var(--background-secondary-color) 9%
+    );
+
+    padding-bottom: 123px;
+
+  }
+}
+.container-gallery {
+  padding-left: 0;
+  padding-right: 0;
+}
+

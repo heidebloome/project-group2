@@ -31,7 +31,7 @@
 }
 
 .cafe-list__item {
-  width: 220px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 45px 20px;
@@ -212,6 +212,7 @@
 }
 
 .contacts-buttons-list {
+  text-align: center;
   @include tablet {
     display: flex;
     justify-content: center;
@@ -230,11 +231,12 @@
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   width: 165px;
+  // height: 44px;
   padding-top: 11px;
   padding-bottom: 11px;
 
