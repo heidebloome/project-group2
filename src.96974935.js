@@ -11,4 +11,4 @@ const e=document.querySelector(".js-menu-container"),t=document.querySelector(".
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./mobile-menu.js"),require("./smooth-scroll.js"),require("./mobile-menu-backdrop.js");
 },{"./sass/main.scss":"clu1","./mobile-menu.js":"Cz5k","./smooth-scroll.js":"GmWq","./mobile-menu-backdrop.js":"Wd5F"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group2/src.95d3c463.js.map
+//# sourceMappingURL=/project-group2/src.96974935.js.map
