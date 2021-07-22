@@ -1,110 +1,95 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
 
-
-.products{
-    padding-top: 121px;
-    padding-bottom: 98px;
-
-    @include tablet {
+  @include tablet {
     padding-bottom: 112px;
   }
-   @include desktop {
+  @include desktop {
     padding-bottom: 119px;
-
-   }
+  }
 }
 
-
-.products__subtitle{
+.products__subtitle {
   @include font(18px, 400, 1.166, 0.03em);
-    font-family: 'Titan One';
-    color:var(--secondary-title-color);
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  font-family: 'Titan One';
+  color: var(--secondary-title-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 
   @include tablet {
-  @include font(26px, 400, 1.153, 0.03em);
+    @include font(26px, 400, 1.153, 0.03em);
   }
 
   @include desktop {
-  @include font(30px, 400, 1.133, 0.04em);
-  }  
+    @include font(30px, 400, 1.133, 0.04em);
+  }
 }
-  
-.products__title{
+
+.products__title {
   @include font(34px, 400, 1.147, 0.04em);
-    font-family: 'Titan One';
-    color:var(--primary-title-color);
-    text-align: center;
-    text-transform: uppercase;
+  font-family: 'Titan One';
+  color: var(--primary-title-color);
+  text-align: center;
+  text-transform: uppercase;
 
   @include tablet {
-  @include font(48px, 400, 1.145, 0.04em);
-  } 
+    @include font(48px, 400, 1.145, 0.04em);
+  }
 
   @include desktop {
-  @include font(58px, 400, 1.137, 0.06em);
-  }  
-
+    @include font(58px, 400, 1.137, 0.06em);
+  }
 }
-.products__card-set{
+.products__card-set {
   width: 100%;
 
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -20px;
+  }
 
-   @include tablet {
-     display: flex;
-     flex-wrap: nowrap;
-     margin-left: -20px;
-   }
-
-    @include desktop {
+  @include desktop {
     margin-left: -24px;
-
-    } 
+  }
 }
-.products__card{
- 
+.products__card {
   width: 100%;
   height: 485px;
   margin-top: 144px;
   border-radius: 24px;
- 
+
   margin-right: auto;
   margin-left: auto;
 
-  
-    @include tablet {
-   
+  @include tablet {
     height: 485px;
     margin-top: 150px;
     margin-left: 20px;
     flex-basis: calc((100% - 60px) / 3);
-    }
+  }
 
-
-    @include desktop {
-
+  @include desktop {
     height: 525px;
     margin-top: 259px;
     margin-left: 24px;
     flex-basis: calc((100% - 72px) / 3);
-    }
-
   }
+}
 
+//Изображения продуктов//
 
-  //Изображения продуктов//
+.products__ice-cream-box {
+  background-color: var(--background-hero-color);
+  position: relative;
 
-.products__ice-cream-box{
-  
-  background-color:var(--background-hero-color);
-   position: relative;
-
-  &::before{
+  &::before {
     display: block;
     width: 249px;
     height: 252px;
-   
+
     position: absolute;
     content: '';
     background-image: url(../images/products/home-pic1-mob-1x.png);
@@ -112,55 +97,47 @@
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
     left: 50%;
-    
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic1-mob-2x.png);
-  }
-
-  @include tablet{
-
-    width: 220px;
-    height: 226px;
-    background-image: url(../images/products/home-pic1-tablet-1x.png);
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic1-tablet-2x.png);
-  }
-
-  }
-  @include desktop {
-    width: 335px;
-    height: 335px;
-    top: -10%;
-    
-   
-
-    background-image: url(../images/products/home-pic1-desktop-1x.png);
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic1-desktop-2x.png);
-  }
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/home-pic1-mob-2x.png);
+    }
 
-  }
+    @include tablet {
+      width: 220px;
+      height: 226px;
+      background-image: url(../images/products/home-pic1-tablet-1x.png);
 
-  }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic1-tablet-2x.png);
+      }
+    }
+    @include desktop {
+      width: 335px;
+      height: 335px;
+      top: -10%;
 
+      background-image: url(../images/products/home-pic1-desktop-1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic1-desktop-2x.png);
+      }
+    }
+  }
 }
 
-.products__ice-coffee-box{
-  background-color:var(--card-coffee-color);
+.products__ice-coffee-box {
+  background-color: var(--card-coffee-color);
   position: relative;
-   
-  &::before{
+
+  &::before {
     display: block;
     width: 249px;
     height: 252px;
@@ -169,178 +146,166 @@
     background-image: url(../images/products/home-pic2-mob-1x.png);
     background-size: cover;
     background-repeat: no-repeat;
-   transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     left: 50%;
- 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic2-mob-2x.png);
-  }
 
-  @include tablet{
-  width: 220px;
-  height: 233px;
-  background-image: url(../images/products/home-pic2-tablet-1x.png);
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic2-tablet-2x.png);
-  }
-
-  }
-  @include desktop {
-    width: 335px;
-    height: 335px;
-    top: -10%;
-    background-image: url(../images/products/home-pic2-desktop-1x.png);
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic2-desktop-2x.png);
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/home-pic2-mob-2x.png);
+    }
+
+    @include tablet {
+      width: 220px;
+      height: 233px;
+      background-image: url(../images/products/home-pic2-tablet-1x.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic2-tablet-2x.png);
+      }
+    }
+    @include desktop {
+      width: 335px;
+      height: 335px;
+      top: -10%;
+      background-image: url(../images/products/home-pic2-desktop-1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic2-desktop-2x.png);
+      }
+    }
   }
-
-  }
-
-  }
-
-
 }
 
-.products__milkshakes-box{
-  background-color:var(--card-green-color);
+.products__milkshakes-box {
+  background-color: var(--card-green-color);
   position: relative;
-   
 
-  &::before{
-  display: block;
-  width: 249px;
-  height: 252px;
-  
-  position: absolute;
-  content: '';
-  background-image: url(../images/products/home-pic3-mob-1x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
-  left: 50%;
-    
+  &::before {
+    display: block;
+    width: 249px;
+    height: 252px;
 
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(../images/products/home-pic3-mob-2x.png);
-  }
+    position: absolute;
+    content: '';
+    background-image: url(../images/products/home-pic3-mob-1x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    left: 50%;
 
-  @include tablet{
-  width: 220px;
-  height: 224px;
-  
-
-    background-image: url(../images/products/home-pic3-tablet-1x.png);
-
-  @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic3-tablet-2x.png);
-  }
-
-  }
-  @include desktop {
-    width: 335px;
-    height: 335px;
-    top: -10%;
-    background-image: url(../images/products/home-pic3-desktop-1x.png);
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/home-pic3-desktop-2x.png);
-  }
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/home-pic3-mob-2x.png);
+    }
 
-  }
+    @include tablet {
+      width: 220px;
+      height: 224px;
 
+      background-image: url(../images/products/home-pic3-tablet-1x.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic3-tablet-2x.png);
+      }
+    }
+    @include desktop {
+      width: 335px;
+      height: 335px;
+      top: -10%;
+      background-image: url(../images/products/home-pic3-desktop-1x.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/home-pic3-desktop-2x.png);
+      }
+    }
   }
 }
 
-.products__item{
+.products__item {
   @include font(20px, 400, 1.15, 0.04em);
-    font-family: 'Titan One';
-    color:var(--white-color);
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 161px;
-    padding-bottom: 30px;
+  font-family: 'Titan One';
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 161px;
+  padding-bottom: 30px;
 
   @include tablet {
     padding-top: 152px;
   }
 
   @include desktop {
-  @include font(30px, 400, 1.133, 0.04em);
-  padding-top: 163px;
-  padding-bottom: 32px;
-  }  
+    @include font(30px, 400, 1.133, 0.04em);
+    padding-top: 163px;
+    padding-bottom: 32px;
+  }
 
-       &::after{
+  &::after {
     position: absolute;
     width: 26px;
     height: 6px;
     content: '';
-    background-image:url(../images/icons/three-dots.svg);
-    color:var(--white-color);
+    background-image: url(../images/icons/three-dots.svg);
+    color: var(--white-color);
     background-position: center;
     background-repeat: no-repeat;
     top: 45%;
     left: 50%;
     transform: translateX(-50%);
-       }
-
+  }
 }
 
-.products__description{
+.products__description {
   position: relative;
   margin-top: 30px;
   margin-right: 40px;
   margin-left: 40px;
 
- 
   @include font(14px, 700, 1.5, 0.04em);
-    color:var(--white-color);
-    text-align: center;
-
+  color: var(--white-color);
+  text-align: center;
 
   @include tablet {
-  @include font(14px, 700, 1.785, 0.04em);
+    @include font(14px, 700, 1.785, 0.04em);
 
-  margin-right: 11px;
-  margin-left: 11px;
-  }   
-
-  @include desktop {
-  @include font(16px, 700, 1.75, 0.04em);
-  margin-top: 32px;
-  margin-right: 44px;
-  margin-left: 44px;
+    margin-right: 11px;
+    margin-left: 11px;
   }
 
-   
+  @include desktop {
+    @include font(16px, 700, 1.75, 0.04em);
+    margin-top: 32px;
+    margin-right: 44px;
+    margin-left: 44px;
+  }
 }
 
 //Кнопка//
 
-.products__btn{
-
+.products__btn {
   position: absolute;
   width: 40px;
   height: 40px;
   padding: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: 50%;
   color: var(--primary-title-color);
   border: 0px;
@@ -353,10 +318,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus{
-      
-      background-color: #ecebeb;
-
-    }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
