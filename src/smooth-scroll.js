@@ -12,7 +12,7 @@ for (let anchor of anchors) {
 
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    backdrop.classList.toggle('is-hidden');
+    backdrop.classList.add('is-hidden');
     bodyScrollLock.enableBodyScroll(document.body);
 
     const blockID = anchor.getAttribute('href').substr(1);
