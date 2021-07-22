@@ -15,7 +15,6 @@ for (let anchor of anchors) {
     openMenuBtn.setAttribute('aria-expanded', false);
     backdrop.classList.add('is-hidden');
     bodyScrollLock.enableBodyScroll(document.body);
-
     hamburger.classList.remove("is-active");
 
     const blockID = anchor.getAttribute('href').substr(1);
