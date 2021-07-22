@@ -5,16 +5,16 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Cz5k":[function(require,module,exports) {
 (()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),n=document.querySelector(".js-close-menu"),c=require("body-scroll-lock"),o=()=>{const n="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!n),e.classList.toggle("is-open"),c[n?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",o),n.addEventListener("click",o);var d=document.querySelector(".hamburger");n.addEventListener("click",function(){d.classList.toggle("is-active")}),window.matchMedia("(min-width: 768px)").addEventListener("change",n=>{n.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),c.enableBodyScroll(document.body))})})();
 },{"body-scroll-lock":"AK1d"}],"GmWq":[function(require,module,exports) {
-const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector("[backdrop]"),r=require("body-scroll-lock"),c=document.querySelectorAll('a[href*="#"]');for(let n of c)n.addEventListener("click",function(c){c.preventDefault(),e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),o.classList.add("is-hidden"),r.enableBodyScroll(document.body);const l=n.getAttribute("href").substr(1);document.getElementById(l).scrollIntoView({behavior:"smooth",block:"start"})});
+const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector("[backdrop]"),r=document.querySelector(".hamburger"),c=require("body-scroll-lock"),n=document.querySelectorAll('a[href*="#"]');for(let s of n)s.addEventListener("click",function(n){n.preventDefault(),e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),o.classList.add("is-hidden"),c.enableBodyScroll(document.body),r.classList.remove("is-active");const l=s.getAttribute("href").substr(1);document.getElementById(l).scrollIntoView({behavior:"smooth",block:"start"})});
 },{"body-scroll-lock":"AK1d"}],"Wd5F":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[backdrop-open]"),closeModalBtn:document.querySelector("[backdrop-close]"),backdrop:document.querySelector("[backdrop]")};function o(){e.backdrop.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"ggWn":[function(require,module,exports) {
 $(window).scroll(function(){$(this).scrollTop()>100?$(".scroll-top").fadeIn():$(".scroll-top").fadeOut()}),$(".scroll-top").click(function(){return $("html,body").animate({scrollTop:0},600),!1});
-},{}],"DmmQ":[function(require,module,exports) {
+},{}],"I07k":[function(require,module,exports) {
 var e=document.querySelector(".hamburger");e.addEventListener("click",function(){e.classList.toggle("is-active")});
 },{}],"hR3q":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./mobile-menu.js"),require("./smooth-scroll.js"),require("./mobile-menu-backdrop.js"),require("./scroll-top.js"),require("./_hamburger.js"),require("./modal.js");
-},{"./sass/main.scss":"clu1","./mobile-menu.js":"Cz5k","./smooth-scroll.js":"GmWq","./mobile-menu-backdrop.js":"Wd5F","./scroll-top.js":"ggWn","./_hamburger.js":"DmmQ","./modal.js":"hR3q"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group2/src.8d2a4e6f.js.map
+"use strict";require("./sass/main.scss"),require("./mobile-menu.js"),require("./smooth-scroll.js"),require("./mobile-menu-backdrop.js"),require("./scroll-top.js"),require("./hamburger.js"),require("./modal.js");
+},{"./sass/main.scss":"clu1","./mobile-menu.js":"Cz5k","./smooth-scroll.js":"GmWq","./mobile-menu-backdrop.js":"Wd5F","./scroll-top.js":"ggWn","./hamburger.js":"I07k","./modal.js":"hR3q"}]},{},["Focm"], null)
+//# sourceMappingURL=/project-group2/src.226b3b66.js.map
