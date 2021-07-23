@@ -201,6 +201,8 @@
   top: 23%;
   left: 20%;
   transform: translate(-50%, -50%);
+  @extend %transition_1;
+
   @media screen and (max-width: 767px) {
     position: absolute;
     width: 171px;
@@ -213,6 +215,7 @@
     // margin-top: 92px;
     // margin-right: 32px;
     z-index: 1;
+    // transition: width 0.3s ease-in-out;
   }
   @include tablet {
     position: absolute;
@@ -232,6 +235,9 @@
     margin-right: 247px;
     z-index: 2;
   }
+}
+.hero-ice:hover {
+  animation: ice-anime 1500ms linear;
 }
 
 .hero-text {

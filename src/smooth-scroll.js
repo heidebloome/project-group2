@@ -1,6 +1,7 @@
 const mobileMenu = document.querySelector('.js-menu-container');
 const openMenuBtn = document.querySelector('.js-open-menu');
 const backdrop = document.querySelector('[backdrop]');
+const hamburger = document.querySelector(".hamburger");
 
 const bodyScrollLock = require('body-scroll-lock');
 
@@ -12,8 +13,9 @@ for (let anchor of anchors) {
 
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    backdrop.classList.toggle('is-hidden');
+    backdrop.classList.add('is-hidden');
     bodyScrollLock.enableBodyScroll(document.body);
+    hamburger.classList.remove("is-active");
 
     const blockID = anchor.getAttribute('href').substr(1);
 

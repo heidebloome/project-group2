@@ -1,0 +1,25 @@
+@keyframes ice-anime {
+  0% {
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+
+  40% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

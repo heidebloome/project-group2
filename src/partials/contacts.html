@@ -102,7 +102,7 @@
     </ul>
     <ul class="contacts-buttons-list">
       <li class="contacts-buttons-list__item">
-        <button type="button" class="button">
+        <button type="button" class="button" data-modal-open>
           Our Locations<svg class="icon" width="10" height="15">
             <use href="images/icons/sprite.svg#icon-btn-bracket"></use>
           </svg>
@@ -116,5 +116,25 @@
         </button>
       </li>
     </ul>
+  </div>
+
+  <div class="backdrop-contacts is-hidden" data-modal>
+    <div class="map-modal">
+      <button type="button" class="button__close-map" data-modal-close>
+        <svg class="icon" width="20" height="20">
+          <use href="images/icons/sprite.svg#icon-close2"></use>
+        </svg>
+      </button>
+      <a
+        href="https://www.google.com/maps/d/u/0/edit?mid=1nujIqbsP83kqXP_S989DxKpL3wmDsUb-&usp=sharing"
+        class="map-link"
+        target="_blank"
+      >
+        <div class="map-wrapper">
+          <img src="images/contacts/map2.jpg" alt="map" width="500" />
+          <p class="map-link-button">View in Google Maps</p>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
