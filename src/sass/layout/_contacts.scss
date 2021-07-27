@@ -1,22 +1,41 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #ffffff 10.5%, #fff5f6 10.5%);
   padding-top: 85px;
   padding-bottom: 113px;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 10.5%,
+    var(--background-secondary-color) 10.5%
+  );
 
   @include tablet {
     padding-top: 120px;
     padding-bottom: 158px;
-    background-image: linear-gradient(to bottom, #ffffff 21%, #fff5f6 21%);
+
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 21%,
+      var(--background-secondary-color) 21%
+    );
   }
 
   @include desktop {
     padding-top: 130px;
     padding-bottom: 86px;
+
     background-image: url(../images/contacts/sectionbg2-1x.png),
-      linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%);
+      linear-gradient(to bottom, var(--white-color) 25%, var(--background-secondary-color) 25%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0% 25%;
+    background-position: 0% 50%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/sectionbg2-2x.png),
+        linear-gradient(to bottom, var(--white-color) 25%, var(--background-secondary-color) 25%);
+    }
   }
 }
 
@@ -134,8 +153,8 @@
 }
 
 .cafe-list__description {
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.5;
 
   color: var(--text-color);
@@ -148,7 +167,6 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.8125;
-    // letter-spacing: 0.04em;
   }
 }
 
@@ -165,8 +183,8 @@
 }
 
 .work-days-list__days {
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.833;
 
   color: var(--black-color);
@@ -183,8 +201,8 @@
 }
 
 .work-days-list__time {
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.833;
 
   color: var(--secondary-title-color);
@@ -201,8 +219,8 @@
 }
 
 .contacts-list__link {
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   line-height: 1.5;
 
   color: var(--text-color);
@@ -219,7 +237,6 @@
 }
 
 .contacts-buttons-list {
-  text-align: center;
   @include tablet {
     display: flex;
     justify-content: center;
@@ -227,6 +244,8 @@
 }
 
 .contacts-buttons-list__item {
+  display: flex;
+
   &:not(:last-child) {
     margin-bottom: 10px;
 
@@ -238,35 +257,27 @@
 }
 
 .button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
   width: 165px;
-  // height: 44px;
   padding-top: 11px;
   padding-bottom: 11px;
 
   border: 0;
   border-radius: 22px;
 
-  font-family: inherit;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.3125;
 
   color: var(--white-color);
   background-color: var(--primary-title-color);
+
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: #c7133e;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px rgb(255 165 186 / 70%);
-    transition: all 250ms ease-in-out;
+    background-color: var(--point-color);
   }
 
   @include before-tablet {
@@ -297,10 +308,7 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px 5px rgb(255 165 186 / 60%);
-    transition: all 250ms ease-in-out;
-    background-color: var(--white-color);
+    background-color: var(--grey-button-hover-color);
   }
 }
 
