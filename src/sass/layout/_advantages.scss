@@ -29,6 +29,12 @@
   }
 }
 
+.advatages__list-item:hover,
+.advatages__list-item:focus {
+  transform: scale(1.05);
+  transition: all 250ms ease-in-out;
+}
+
 .first-icon {
   &::before {
     @include before-tablet {

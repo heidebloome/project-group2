@@ -137,7 +137,6 @@
   @include desktop {
     width: 538px;
     top: 183px;
-    top: 30%;
     position: absolute;
     transform: translate(-50%, -50%);
     // //height: 538px;
@@ -177,7 +176,9 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+    transition: all 250ms ease-in-out;
     outline: none;
     cursor: pointer;
   }
@@ -324,7 +325,9 @@
 .hero-icon:hover,
 .hero-icon:focus {
   color: var(--white-color);
-  background-color: #ecebeb;
+  transform: rotate(360deg);
+  transition: all 250ms ease-in-out;
+  box-shadow: 0 0 35px 10px rgb(255 255 255 / 80%);
 }
 
 .hero-girl {

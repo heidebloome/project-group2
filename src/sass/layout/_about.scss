@@ -185,7 +185,10 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgb(255 165 186 / 40%);
+    transition: all 250ms ease-in-out;
+    // background-color: #ecebeb;
   }
 
   @include tablet {
