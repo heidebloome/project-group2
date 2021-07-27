@@ -13,10 +13,10 @@ $(window).scroll(function(){$(this).scrollTop()>100?$(".scroll-top").fadeIn():$(
 },{}],"I07k":[function(require,module,exports) {
 var e=document.querySelector(".hamburger");e.addEventListener("click",function(){e.classList.toggle("is-active")});
 },{}],"ehZo":[function(require,module,exports) {
-$(function(){$(".slider").slick({arrows:!1,dots:!0,slidesToShow:1,autoplay:!1,speed:1e3,autoplaySpeed:800,responsive:[{breakpoint:768,settings:{slidesToShow:1}},{breakpoint:480,settings:{slidesToShow:1}}]})});
+$(function(){$(".slider").slick({arrows:!1,dots:!0,slidesToShow:1,autoplay:!1,speed:1e3,autoplaySpeed:800,responsive:[{breakpoint:768,settings:{slidesToShow:1}},{breakpoint:480,settings:{slidesToShow:1}}]})});var e=document.getElementById("watchme");function t(e){var t=document.createElement("li");switch(e.type){case"animationstart":t.innerHTML="Started: elapsed time is "+e.elapsedTime;break;case"animationend":t.innerHTML="Ended: elapsed time is "+e.elapsedTime;break;case"animationiteration":t.innerHTML="New loop started at time "+e.elapsedTime}document.getElementById("output").appendChild(t)}e.addEventListener("animationstart",t,!1),e.addEventListener("animationend",t,!1),e.addEventListener("animationiteration",t,!1),e.className="slidein";
 },{}],"hR3q":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./mobile-menu.js"),require("./smooth-scroll.js"),require("./mobile-menu-backdrop.js"),require("./scroll-top.js"),require("./hamburger.js"),require("./slide.js"),require("./modal.js");
 },{"./sass/main.scss":"clu1","./mobile-menu.js":"Cz5k","./smooth-scroll.js":"GmWq","./mobile-menu-backdrop.js":"Wd5F","./scroll-top.js":"ggWn","./hamburger.js":"I07k","./slide.js":"ehZo","./modal.js":"hR3q"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-group2/src.1ecce251.js.map
+//# sourceMappingURL=/project-group2/src.43583d03.js.map
