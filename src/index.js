@@ -4,5 +4,5 @@ import './smooth-scroll.js';
 import './mobile-menu-backdrop.js';
 import './scroll-top.js';
 import './hamburger.js';
-import './slide.js';
 import './modal.js';
+import './slide.js';

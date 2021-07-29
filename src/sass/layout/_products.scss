@@ -390,12 +390,6 @@
   transition: all 250ms ease-in-out;
 }
 
-.cafe-list__item {
-  transition: all 250ms ease-in-out;
-}
-
-.cafe-list__item:focus,
-.cafe-list__item:hover,
 .products__card:focus,
 .products__card:hover {
   transform: scale(1.05);
