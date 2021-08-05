@@ -339,7 +339,7 @@
   visibility: visible;
   opacity: 1;
 
-  transition: opacity 250ms var(--transition-cubic), visibility 250ms var(--transition-cubic);
+  transition: opacity 250ms var(--transition-duration), visibility 250ms var(--transition-duration);
 
   &.is-hidden {
     visibility: hidden;
